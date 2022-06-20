@@ -2,12 +2,50 @@
   margin: 0;
   padding: 0;
 }
-
+/* NAVBAR ************************************************ */
 .navbar {
   background-image: linear-gradient(to top, #afb5b5 80%, black);
   border-bottom: .2rem black solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
+/* MAIN *************************************************** */
+.fondo{
+  background-color: #07395f;
+}
+  /* ESPACIADOR */
+  .espaciador{
+    padding: 40px 0;
+    background-color: #07395f;
+  }
+  /* MEDIOS DE PAGO *******************************************/
 
+  .rectangulo {
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 8px 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+  }
+  .pagos {
+    display: block;
+    text-align: center;
+  }
+  .tarjetas {
+    width: auto;
+    max-height: 4rem;
+    margin: 2px;
+    padding: 5px;
+    border: 2px solid black;
+  }
+  
+/* FOOTER ************************************************* */
 .footer {
   background-image: linear-gradient(to top, #afb5b5 80%, black);
   display: flex;
@@ -36,4 +74,22 @@
 .info{
   display: flex;
   align-items: center;
+}
+
+/* MEDIA QUERIES ******************************************/
+  /* MOBILE LAST - MAX WIDTH ******************************/
+  /*  SMALL ***********************************************/
+@media (max-width: 425px) {
+
+  .tarjetas{
+    max-height: 3rem;
+  }
+  .footer{
+    font-size: small;
+    justify-content: center;
+  }
+  .footer i {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
 }
