@@ -1,8 +1,39 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.navbar{
-  background-color: #afb5b5;
+.navbar {
+  background-image: linear-gradient(to top, #afb5b5 80%, black);
+  border-bottom: .2rem black solid;
+}
+
+.footer {
+  background-image: linear-gradient(to top, #afb5b5 80%, black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer i {
+  font-size: 2rem;
+  padding: 0.75rem;
+}
+.footer i:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: black;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.info{
+  display: flex;
+  align-items: center;
 }
