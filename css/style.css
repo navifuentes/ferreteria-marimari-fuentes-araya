@@ -4,50 +4,72 @@
 }
 /* NAVBAR ************************************************ */
 .navbar {
-  background-image: linear-gradient(to top, #afb5b5 80%, black);
-  border-bottom: .2rem black solid;
+  background: linear-gradient(137.22deg,#293444 0%, #afb5b5 47.98%,#293444 100%);
+  border-bottom: 0.2rem black solid;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
 }
+.dropdown-menu{
+  background: linear-gradient(137.22deg,#293444 0%, #afb5b5 47.98%,#293444 100%);
+}
+
 /* MAIN *************************************************** */
-.fondo{
+.fondo {
   background-color: #07395f;
 }
-  /* ESPACIADOR */
-  .espaciador{
-    padding: 40px 0;
-    background-color: #07395f;
-  }
-  /* MEDIOS DE PAGO *******************************************/
+/* ESPACIADOR */
+.espaciador {
+  padding: 40px 0;
+  background-color: #07395f;
+}
 
-  .rectangulo {
-    display: inline-flex;
-    height: auto;
-    width: 100%;
-    margin: 1rem 0;
-    padding: 8px 0;
-    flex-wrap: wrap;
-    overflow: hidden;
-    text-align: center;
-    justify-content: center;
-  }
-  .pagos {
-    display: block;
-    text-align: center;
-  }
-  .tarjetas {
-    width: auto;
-    max-height: 4rem;
-    margin: 2px;
-    padding: 5px;
-    border: 2px solid black;
-  }
-  
+/* FIXED ****************************************************/
+.fixed-icon {
+  border-radius: 40%;
+  border: 2px solid black;
+  position: fixed;
+  bottom: 12%;
+  right: 1rem;
+  padding: 8px;
+
+  animation-name: glow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+/*TEXTO *****************************************************/
+.texto {
+  text-align: justify;
+}
+/* MEDIOS DE PAGO *******************************************/
+.rectangulo {
+  display: inline-flex;
+  height: auto;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 8px 0;
+  flex-wrap: wrap;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+.pagos {
+  display: block;
+  text-align: center;
+}
+.tarjetas {
+  width: auto;
+  max-height: 4rem;
+  margin: 2px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
 /* FOOTER ************************************************* */
 .footer {
-  background-image: linear-gradient(to top, #afb5b5 80%, black);
+  background: linear-gradient(137.22deg,#293444 0%, #afb5b5 47.98%,#293444 100%);
+  border-top: 0.2rem solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,34 +84,72 @@
   transform: scale(1.2);
   transition: 1s;
 }
-
 .footer a:visited {
   text-decoration: none;
   color: black;
+}
+.footIzq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .icons {
   display: flex;
   align-items: center;
 }
-.info{
+.info {
   display: flex;
   align-items: center;
+  padding-right: 2rem;
 }
 
 /* MEDIA QUERIES ******************************************/
-  /* MOBILE LAST - MAX WIDTH ******************************/
-  /*  SMALL ***********************************************/
+/* MOBILE LAST - MAX WIDTH ******************************/
+/* TABLET ********************************************* */
+@media (max-width: 768px) {
+  .fixed-icon {
+    bottom: 35%;
+  }
+}
+/*  SMALL ***********************************************/
 @media (max-width: 425px) {
-
-  .tarjetas{
+  .tarjetas {
     max-height: 3rem;
   }
-  .footer{
+  .footer {
+    padding: 0;
     font-size: small;
     justify-content: center;
   }
   .footer i {
-    font-size: 1rem;
-    padding: 0.75rem;
+    font-size: 1.5rem;
+    padding: 0 0.75rem;
+    padding-top: 0.5rem;
+  }
+  .icons {
+    padding: 0;
+  }
+  .info {
+    padding: 0;
+  }
+}
+
+/* ANIMACIONES *************************************************/
+@keyframes glow {
+  0% {
+    background-color: #2d4739;
+  }
+  25% {
+    background-color: #84a07c;
+  }
+  50% {
+    background-color: #c3d350;
+  }
+  75% {
+    background-color: #84a07c;
+  }
+  100% {
+    background-color: #2d4739;
   }
 }
