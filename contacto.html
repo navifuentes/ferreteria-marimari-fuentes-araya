@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Mari Mari</a>
+        <a class="navbar-brand titulo" href="./index.html">Mari Mari</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,7 +44,7 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="./productos.html"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -52,14 +53,14 @@
                 Productos
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Agrotilenos</a></li>
-                <li><a class="dropdown-item" href="#">Alambres</a></li>
-                <li><a class="dropdown-item" href="#">Caños</a></li>
-                <li><a class="dropdown-item" href="#">Herramientas</a></li>
-                <li><a class="dropdown-item" href="#">Electricidad</a></li>
-                <li><a class="dropdown-item" href="#">Pinturas</a></li>
-                <li><a class="dropdown-item" href="#">Prod. Adherentes</a></li>
-                <li><a class="dropdown-item" href="#">Tornillerías</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Agrotilenos</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Alambres</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Caños</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Herramientas</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Electricidad</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Pinturas</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Prod. Adherentes</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Tornillerías</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -81,9 +82,74 @@
         </div>
       </div>
     </nav>
+    <!-- MAIN ******************************************************************* -->
     <main>
       <div class="fondo text-center">
+        <!-- ESPACIADOR -->
         <div class="espaciador"></div>
+        <h2>Contáctanos</h2>
+        <!-- FORMULARIO -->
+        <form class="container">
+          <!-- <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+            />
+            <span class="input-group-text">@</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Server"
+              aria-label="Server"
+            />
+          </div> -->
+          <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <input
+              type="number"
+              class="form-control"
+              id="edad"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Deje su comentario</label>
+            <textarea
+              class="form-control"
+              aria-label="With textarea"
+              id="comentario"
+            ></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Suscribirme al Newsletter</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
     </main>
     <footer>

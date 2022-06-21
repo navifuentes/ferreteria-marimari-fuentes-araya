@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 /* NAVBAR ************************************************ */
 .navbar {
@@ -11,6 +12,10 @@
   width: 100%;
   z-index: 100;
 }
+.titulo{
+  font-family: "Limelight", cursive;
+  font-size: 40px;
+}
 .dropdown-menu{
   background: linear-gradient(137.22deg,#293444 0%, #afb5b5 47.98%,#293444 100%);
 }
@@ -18,6 +23,9 @@
 /* MAIN *************************************************** */
 .fondo {
   background-color: #07395f;
+}
+.no-fondo{
+  background-color: white;
 }
 /* ESPACIADOR */
 .espaciador {
@@ -64,6 +72,15 @@
   margin: 2px;
   padding: 5px;
   border: 2px solid black;
+}
+/* OFERTAS *************************************************/
+.ofertas{
+  border: solid black 2px;
+  padding: 20px 10px;
+}
+/* PRODUCTOS */
+.lista-productos{
+  list-style: none;
 }
 
 /* FOOTER ************************************************* */
